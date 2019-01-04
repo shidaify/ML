@@ -25,7 +25,7 @@ def get_beta( color ):
 ###后向
 color = [white,white,red,white,red,red,white,red]
 beta = [[1,1,1]]
-for i in color:
+for i in color[:len(color)-1]:
 	get_beta(i)
 beta = np.array(beta)
 print(beta)
